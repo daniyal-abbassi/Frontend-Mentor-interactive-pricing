@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header class="main-title">
+      <img src="./images/pattern-circles.svg" alt="circles">
+      <h1 class="front-title">Simple, traffic-based pricing</h1>
+      <p class="signup-title">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <main class="main-wrapper" id="app">
+      <form class="form">
+        <div class="range-output">
+          <div class="views-wrapper">
+            <span class="views-count"></span>
+            <span class="views-text">Pageviews</span>
+          </div>
+          <div class="month-price">
+            <span class="price">$ </span>
+            <span class="month">/month</span>
+          </div>
+        </div>
+        <div class="range-wrapper">
+          <input type="range" value="views-count" name="views-count" />
+        </div>
+        <div class="toggle-wrapper">
+          <span class="month-billing">Monthly Billing</span>
+          <!--input or button?-->
+          <button type="button" class="toggle-btn"></button>
+          <span class="year-billing">Yearly Billing</span>
+          <span class="discount">25% discount</span>
+        </div>
+        <hr class="divide-line" />
+        <div class="options">
+          <ul class="options-list">
+            <li class="list-item">Unlimited websites</li>
+            <li class="list-item">100% data ownership</li>
+            <li class="list-item">Email reports</li>
+          </ul>
+        </div>
+        <div class="trial">
+          <button type="submit" class="submit-btn">Start my trial</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
