@@ -150,6 +150,7 @@ body {
 .toggle-btn.active {
     background: hsl(174, 86%, 45%);
 }
+
 .toggle-btn::before {
     content: '';
     position: absolute;
@@ -184,8 +185,10 @@ body {
 .divide-line {
     width: 100%;
     color: hsl(230, 100%, 99%);
-    margin: 0 -4rem;
-    position: relative;
+    margin: 2vh 0;
+    border: none;
+    height: 1px;
+    background-color: hsl(224, 65%, 95%);
 }
 
 .options-list {
@@ -222,8 +225,11 @@ body {
     color: white;
 }
 
-@media (max-width:880px ) {
+@media (max-width: 880px) {
    
+    .discount-text {
+        display: none;
+    }
     .main-title {
         margin-top: 10%;
         width: 100vw;
@@ -280,5 +286,109 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+}
+
+/* Mobile Phone Responsive Design */
+@media (max-width: 480px) {
+    body {
+        gap: 4%;
+        padding: 0 20px;
+    }
+    
+    .main-title {
+        margin-top: 5%;
+        height: 30vh;
+        padding: 2vh 1vw;
+        background-size: 120px 120px;
+    }
+    
+    .front-title {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    
+    .signup-title {
+        padding: 5px 20px;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .main-wrapper {
+        width: 95vw;
+        padding: 4% 2%;
+        margin-top: -20px;
+    }
+    
+    .form {
+        gap: 3vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .range-output {
+        gap: 12vh;
+    }
+    
+    .views-wrapper {
+        font-size: 0.9rem;
+    }
+    
+    .views-text {
+        letter-spacing: 1px;
+    }
+    
+    .price {
+        font-size: 2.2rem;
+    }
+    
+    .month {
+        font-size: 0.9rem;
+    }
+    
+    .range-wrapper {
+        width: 85vw;
+        left: 2.5vw;
+        top: 10vh;
+    }
+    
+    .range-input {
+        height: 12px;
+    }
+    
+    .range-input::-moz-range-thumb {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .toggle-wrapper {
+        gap: 10px;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .discount {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+    
+    
+    .divide-line {
+        margin: 1.5vh 0;
+    }
+    
+    .options-list {
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .below-part {
+        gap: 15px;
+    }
+    
+    .submit-btn {
+        padding: 12px 40px;
+        font-size: 0.9rem;
     }
 }
