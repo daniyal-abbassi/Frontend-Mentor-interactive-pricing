@@ -178,3 +178,43 @@ body {
     border-radius: 25px;
 }
 
+.divide-line {
+    width: 100%;
+    color: hsl(230, 100%, 99%);
+    margin: 0 -4rem;
+    position: relative;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    color: hsl(225, 20%, 60%);
+    font-weight: 800;
+}
+.list-item::before {
+    content: url('./images/icon-check.svg');
+    margin-right: 10px;
+}
+.below-part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.submit-btn {
+    appearance: none;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 50px;
+    background-color: hsl(227, 35%, 25%);;
+    color: hsl(223, 50%, 87%);
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 2vh;
+}
+.submit-btn:hover {
+    cursor: pointer;
+    color: white;
+}
