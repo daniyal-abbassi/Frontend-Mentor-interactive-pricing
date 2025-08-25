@@ -221,3 +221,64 @@ body {
     cursor: pointer;
     color: white;
 }
+
+@media (max-width:880px ) {
+   
+    .main-title {
+        margin-top: 10%;
+        width: 100vw;
+        height: 40vh;
+        padding: 4vh 3vw;
+        text-align: center;
+        background-size: 180px 180px;
+    }
+
+    .front-title {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .signup-title {
+        display: inline-block;
+        padding: 10px 100px;
+    }
+    .main-wrapper {
+        width: 80vw;
+        padding-bottom: 10vh;
+        margin-top: -30px;
+    }
+    .form {
+        position: relative;
+    }
+    .range-output {
+        flex-direction: column;
+        align-items: center;
+        gap: 18vh;
+    }
+    .views-text {
+        letter-spacing: 2px;
+    }
+    .price::after {
+        content: '.00';
+        margin-right: 5px;
+    }
+    .range-wrapper {
+        position: absolute;
+        width: 70vw;
+        left: 3.5vw;
+        top: 14vh;
+    }
+    .range-input {
+        height: 14px;
+    }
+    .range-input::-moz-range-thumb {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .below-part {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
