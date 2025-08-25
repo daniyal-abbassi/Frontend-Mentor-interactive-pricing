@@ -128,6 +128,7 @@ body {
     color: hsl(225, 20%, 60%);
     font-weight: 800;
 }
+
 .toggle-btn {
     border: none;
     outline: none;
@@ -143,7 +144,12 @@ body {
     padding: 0;
     margin: 0;
 }
-
+.toggle-btn.active::before {
+    transform: translateX(25px);
+}
+.toggle-btn.active {
+    background: hsl(174, 86%, 45%);
+}
 .toggle-btn::before {
     content: '';
     position: absolute;
@@ -157,13 +163,10 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.toggle-btn.active::before {
-    transform: translateX(25px);
-}
 
-.toggle-btn:hover {
+/* .toggle-btn:hover {
     background: linear-gradient(135deg, hsl(230, 100%, 85%), hsl(230, 100%, 80%));
-}
+} */
 
 .toggle-btn:hover::before {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);

@@ -31,21 +31,22 @@
       <form class="form">
         <div class="range-output">
           <div class="views-wrapper">
-            <span class="views-count">100K </span>
+            <span class="views-count" id="view-count"></span>
             <span class="views-text"> Pageviews</span>
           </div>
           <div class="month-price">
-            <span class="price">$16.00 </span>
+            <span class="price" id="month-price"> </span>
             <span class="month"> / month</span>
           </div>
         </div>
         <div class="range-wrapper">
-          <input type="range" value="views-count" name="views-count" class="range-input"/>
+          <input type="range" value="views-count" name="views-count" id="range-input" class="range-input" min="1" max="5" />
+          
         </div>
         <div class="toggle-wrapper">
           <span class="month-billing">Monthly Billing</span>
           <!--input or button?-->
-          <button type="button" class="toggle-btn"></button>
+          <button type="button" class="toggle-btn" id="discount-btn"></button>
           <span class="year-billing">Yearly Billing</span>
           <span class="discount">25% discount</span>
         </div>
@@ -65,5 +66,6 @@
         </div>
       </form>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
