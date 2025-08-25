@@ -120,5 +120,61 @@ body {
     appearance: none;
 }
 
+.toggle-wrapper {
+    margin: 4vh auto;
+    display: flex;
+    gap: 15px;
+    font-size: 1rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 800;
+}
+.toggle-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, hsl(230, 100%, 90%), hsl(230, 100%, 85%));
+    position: relative;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+}
 
+.toggle-btn::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn.active::before {
+    transform: translateX(25px);
+}
+
+.toggle-btn:hover {
+    background: linear-gradient(135deg, hsl(230, 100%, 85%), hsl(230, 100%, 80%));
+}
+
+.toggle-btn:hover::before {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.discount {
+    font-size: 0.8rem;
+    display: inline-block;
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+    padding: 5px 8px;
+    border-radius: 25px;
+}
 
