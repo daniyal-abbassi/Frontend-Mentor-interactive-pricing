@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header class="main-title">
+      <!-- <img src="./images/pattern-circles.svg" alt="circles" /> -->
+      <h1 class="front-title">Simple, traffic-based pricing</h1>
+      <p class="signup-title">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <main class="main-wrapper" id="app">
+      <form class="form">
+        <div class="range-output">
+          <div class="views-wrapper">
+            <span class="views-count" id="view-count"></span>
+            <span class="views-text"> Pageviews</span>
+          </div>
+          <div class="month-price">
+            <span class="price" id="month-price"> </span>
+            <span class="month"> / month</span>
+          </div>
+        </div>
+        <div class="range-wrapper">
+          <input type="range" value="views-count" name="views-count" id="range-input" class="range-input" min="1" max="5" />
+          
+        </div>
+        <div class="toggle-wrapper">
+          <span class="month-billing">Monthly Billing</span>
+          <!--input or button?-->
+          <button type="button" class="toggle-btn" id="discount-btn"></button>
+          <span class="year-billing">Yearly Billing</span>
+          <span class="discount">25% <span class="discount-text">discount</span></span>
+        </div>
+        <hr class="divide-line" />
+        <div class="below-part">
+
+          <div class="options">
+            <ul class="options-list">
+              <li class="list-item">Unlimited websites</li>
+              <li class="list-item">100% data ownership</li>
+              <li class="list-item">Email reports</li>
+            </ul>
+          </div>
+          <div class="trial">
+            <button type="submit" class="submit-btn">Start my trial</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
