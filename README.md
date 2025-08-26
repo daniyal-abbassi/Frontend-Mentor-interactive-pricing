@@ -31,8 +31,8 @@ An accessible, responsive pricing component with a range slider and yearly billi
 
 ### Links
 
-- Live Demo: add your deployed URL here
-- Solution: add your Frontend Mentor solution URL here
+- Live Demo: [Demo](https://daniyal-abbassi.github.io/Frontend-Mentor-interactive-pricing/)
+- Solution: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/html-css-js-o8S1IV2rIj)
 
 ### Getting started
 
