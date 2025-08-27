@@ -1,11 +1,9 @@
+@use '../utils/mixins';
 body {
+    @include mixins.flex-column-center;
     font-family: 'Manrope';
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    /* justify-content: space-around; */
-    align-items:center;
     gap: 8%;
     font-size: 15px;
     background: linear-gradient(

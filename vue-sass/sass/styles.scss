@@ -1,42 +1,11 @@
 @use "utils/variables";
 @use "base/typography";
 @use "base/reset";
+@use "layout/main";
+@use "components/header"
 
-.main-title {
-  margin-top: 4%;
-  background-image: url("./images/pattern-circles.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2.5%;
 
-  .front-title {
-    font-weight: 800;
-    font-size: 2.5rem;
-    color: hsl(227, 35%, 25%);
-  }
-  .signup-title {
-    font-weight: 800;
-    text-align: center;
-    margin-top: 2%;
-    color: hsl(225, 20%, 60%);
-    font-size: 1rem;
-  }
-}
 
-.main-wrapper {
-  padding: 2%;
-  background-color: hsl (0, 0%, 100%);
-  border-radius: 3%;
-  width: 40vw;
-  background-color: white;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-}
 .range-output {
   display: flex;
   margin-top: 3vh;
@@ -47,25 +16,25 @@
   font-weight: 600;
   font-size: 1rem;
   margin-top: 10px;
-}
-.views-text {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  .views-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 }
 .month-price {
   display: flex;
   align-items: center;
   margin-top: -15px;
-}
-.month {
-  color: hsl(225, 20%, 60%);
-  font-weight: 600;
-}
-.price {
-  color: hsl(227, 35%, 25%);
-  font-weight: 800;
-  font-size: 3rem;
-  margin-right: 5px;
+  .month {
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+  }
+  .price {
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+    font-size: 3rem;
+    margin-right: 5px;
+  }
 }
 .range-input {
   -webkit-appearance: none;
@@ -76,9 +45,8 @@
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-}
 
-.range-input::-moz-range-thumb {
+&::-moz-range-thumb {
   appearance: none;
   width: 40px;
   height: 40px;
@@ -92,12 +60,13 @@
   background-position: center;
 }
 
-.range-input::-moz-range-progress {
+&::-moz-range-progress {
   background-color: hsl(174, 77%, 80%);
   height: 8px;
   border-radius: 4px;
   outline: none;
   appearance: none;
+}
 }
 
 .toggle-wrapper {
@@ -123,35 +92,30 @@
   appearance: none;
   padding: 0;
   margin: 0;
-}
-.toggle-btn.active::before {
-  transform: translateX(25px);
-}
-.toggle-btn.active {
-  background: hsl(174, 86%, 45%);
-}
+  &.active::before {
+    transform: translateX(25px);
+  }
+  &.active {
+    background: hsl(174, 86%, 45%);
+  }
 
-.toggle-btn::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  width: 18px;
-  height: 18px;
-  background: white;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover::before {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  }
 }
-
-/* .toggle-btn:hover {
-    background: linear-gradient(135deg, hsl(230, 100%, 85%), hsl(230, 100%, 80%));
-} */
-
-.toggle-btn:hover::before {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-}
-
 .discount {
   font-size: 0.8rem;
   display: inline-block;
@@ -198,10 +162,10 @@
   font-weight: 800;
   font-size: 1rem;
   margin-top: 2vh;
-}
-.submit-btn:hover {
-  cursor: pointer;
-  color: white;
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
 }
 
 @media (max-width: 880px) {

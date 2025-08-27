@@ -1,11 +1,10 @@
 body {
-  font-family: "Manrope";
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-family: "Manrope";
   width: 100vw;
   height: 100vh;
-  /* justify-content: space-around; */
-  align-items: center;
   gap: 8%;
   font-size: 15px;
   background: linear-gradient(to bottom, hsl(224, 65%, 95%) 0%, hsl(224, 65%, 95%) 50%, hsl(230, 100%, 99%) 50%, hsl(230, 100%, 99%) 100%);
@@ -17,26 +16,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.main-title {
-  margin-top: 4%;
-  background-image: url("./images/pattern-circles.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2.5%;
-}
-.main-title .front-title {
-  font-weight: 800;
-  font-size: 2.5rem;
-  color: hsl(227, 35%, 25%);
-}
-.main-title .signup-title {
-  font-weight: 800;
-  text-align: center;
-  margin-top: 2%;
-  color: hsl(225, 20%, 60%);
-  font-size: 1rem;
 }
 
 .main-wrapper {
@@ -67,8 +46,7 @@ body {
   font-size: 1rem;
   margin-top: 10px;
 }
-
-.views-text {
+.views-wrapper .views-text {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -78,13 +56,11 @@ body {
   align-items: center;
   margin-top: -15px;
 }
-
-.month {
+.month-price .month {
   color: hsl(225, 20%, 60%);
   font-weight: 600;
 }
-
-.price {
+.month-price .price {
   color: hsl(227, 35%, 25%);
   font-weight: 800;
   font-size: 3rem;
@@ -102,7 +78,6 @@ body {
   outline: none;
   cursor: pointer;
 }
-
 .range-input::-moz-range-thumb {
   -moz-appearance: none;
        appearance: none;
@@ -117,7 +92,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .range-input::-moz-range-progress {
   background-color: hsl(174, 77%, 80%);
   height: 8px;
@@ -152,15 +126,12 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .toggle-btn.active::before {
   transform: translateX(25px);
 }
-
 .toggle-btn.active {
   background: hsl(174, 86%, 45%);
 }
-
 .toggle-btn::before {
   content: "";
   position: absolute;
@@ -173,10 +144,6 @@ body {
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* .toggle-btn:hover {
-    background: linear-gradient(135deg, hsl(230, 100%, 85%), hsl(230, 100%, 80%));
-} */
 .toggle-btn:hover::before {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -233,7 +200,6 @@ body {
   font-size: 1rem;
   margin-top: 2vh;
 }
-
 .submit-btn:hover {
   cursor: pointer;
   color: white;
